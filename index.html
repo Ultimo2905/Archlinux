@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,700,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="first-slide">
+                        <div class="mainContent">
+                            <div class="first-slide-left-block">
+                                <div class="first-slide-left-block-logo">
+                                    <img src="images/logo.png" alt="">
+                                </div>
+                                <div class="first-slide-left-block-text">
+                                    <h2>Узнайте стоимость проекта онлайн
+                                    </h2>
+                                    <p>Пройдите тест для расчета предварительной стоимости проекта</p>
+                                </div>
+                                <div class="first-slide-left-block-link">
+                                    <a href="#" class="swiper-button-next">
+                                        Начать тест
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="two-slide">
+                        <div class="mainContent">
+                            <div class="two-slide-left-block">
+                                <div class="two-slide-left-block-title">
+                                    <img src="images/logo.png" alt="">
+                                    <h3>Выберите тип сайта:</h3>
+                                </div>
+                                <div class="two-slide-left-block-cartGrup">
+                                    <div class="two-slide-left-block-select">
+                                        <a href="#three-slide" id="order1">
+                                            <div>
+                                                <img src="images/web-site (1).png" alt="">
+                                                <p>Landing<br /> pages
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="two-slide-left-block-select">
+                                        <a href="#three-slide" id="order2">
+                                            <div>
+                                                <img src="images/web-site.png" alt="">
+                                                <p>сайт<br /> визитка
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="two-slide-left-block-select">
+                                        <a href="#three-slide" id="order3">
+                                            <div>
+                                                <img src="images/group (2).png" alt="">
+                                                <p>Корпоративный<br /> сайт
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="two-slide-left-block-select" id="orders">
+                                        <a href="#three-slide" id="order4">
+                                            <div>
+                                                <img src="images/megaphone.png" alt="">
+                                                <p>промо<br /> сайт
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="two-slide-left-block-select">
+                                        <a href="#three-slide" id="order5">
+                                            <div>
+                                                <img src="images/laptop.png" alt="">
+                                                <p>интеренет<br /> магазин
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="two-slide-left-block-select">
+                                        <a href="#three-slide" id="order6">
+                                            <div>
+                                                <img src="images/app.png" alt="">
+                                                <p>Сервисное<br /> приложение
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" id="three-slide">
+                    <div class="three-slide">
+                        <div class="mainContent">
+                            <div class="three-slide-left-block">
+                                <div class="three-slide-left-block-logo">
+                                    <img src="images/logo.png" alt="">
+                                </div>
+                                <div class="three-slide-left-block-text">
+                                    <h2>Стоимость вашего проекта от <span id="prise">Виберіть послугу</span>
+                                    </h2>
+                                    <p>Оставить заявку на точный расчет:</p>
+                                </div>
+                                <div class="three-slide-left-block-link">
+                                    <form action="" method="post">
+                                        <input type="tel" name="phone" pattern="[\+]\d{2}\[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="19" maxlength="19" required placeholder="+38 (0..) 123-45-67">
+                                        <input type="submit" value="Заказать" id="send">
+                                        <!-- <span>Format: 123-45-678</span> -->
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <aside>
+            <div class="first-slide-right-block">
+                <div class="first-slide-right-block-title">
+                    <p>Знакомьтесь</p>
+                </div>
+                <div class="first-slide-right-block-cart">
+                    <img src="images/foto.png" alt="">
+                    <p>Дмитрий Тищенко</p>
+                </div>
+                <div class="first-slide-right-block-text">
+                    <p id="menejer">Ваш будущий менеджер проектов
+                    </p>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <script type="text/javascript">
+        // function ValidPhone() {
+        //     var re = /^\d[\d\(\)\ -]{4,14}\d$/;
+        //     var myPhone = document.getElementById('phone').value;
+        //     var valid = re.test(myPhone);
+        //     if (valid) output = 'Номер телефона введен правильно!';
+        //     else output = 'Номер телефона введен неправильно!';
+        //     document.getElementById('message').innerHTML = document.getElementById('message').innerHTML+'<br />'+output;
+        //     return valid;
+        // }
+    </script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html
